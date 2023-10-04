@@ -1,0 +1,19 @@
+service: server
+
+provider:
+    name: aws
+    runtime: nodejs18.x
+
+functions:
+    app:
+        handler: dist/index.handler
+        events:
+            - http: ANY /
+            - http: 'ANY /{proxy+}'
+
+plugins:
+    - serverless-offline
+
+custom:
+    serverless-offline:
+        httpPort: 5000
