@@ -1,5 +1,5 @@
 import { Request, Response } from "express"
-import { helloService } from "src/services"
+import { helloService } from "@/services"
 
 const hello = async (request: Request, response: Response) => {
     try {

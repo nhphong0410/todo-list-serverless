@@ -3,10 +3,11 @@
 	"version": "1.0.0",
 	"description": "",
 	"main": "dist/index.js",
+	"_moduleAliases": {
+		"@": "dist"
+	},
 	"scripts": {
 		"dev": "concurrently -c 'bgBlue.bold,bgGreen.bold' -k \"tsc -w\" \"serverless offline --reloadHandler\"",
-		"compile:watch": "tsc -w",
-		"serverless-offline": "serverless offline start",
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"keywords": [],
@@ -22,6 +23,7 @@
 		"@types/cors": "^2.8.14",
 		"@types/express": "^4.17.18",
 		"concurrently": "^8.2.1",
+		"module-alias": "^2.2.3",
 		"serverless": "^3.35.2",
 		"serverless-offline": "^13.1.2",
 		"typescript": "^5.2.2"

@@ -1,5 +1,5 @@
 import express from 'express'
-import { helloController } from 'src/controllers'
+import { helloController } from '@/controllers'
 
 export const helloRouter = express.Router()
 
