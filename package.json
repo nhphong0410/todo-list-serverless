@@ -7,7 +7,7 @@
 		"@": "dist"
 	},
 	"scripts": {
-		"dev": "concurrently -c 'bgBlue.bold,bgGreen.bold' -k \"tsc -w\" \"serverless offline --reloadHandler\"",
+		"dev": "concurrently -k \"tsc -w\" \"serverless offline --reloadHandler\"",
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"keywords": [],
