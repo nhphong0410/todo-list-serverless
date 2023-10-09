@@ -1,8 +1,13 @@
 service: server
 
+useDotenv: true
+
 provider:
     name: aws
     runtime: nodejs18.x
+    
+    environment:
+        NODE_ENV: ${env:NODE_ENV}
 
 functions:
     app:
