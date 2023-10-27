@@ -1,5 +1,5 @@
-import { Account } from "node-appwrite"
-import client from "./client"
+import { Account } from 'node-appwrite'
+import client from './client'
 
 const account = new Account(client)
 

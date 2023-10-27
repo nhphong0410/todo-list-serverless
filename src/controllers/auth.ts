@@ -1,5 +1,5 @@
-import { Request, Response } from "express"
-import { authService } from "@/services"
+import { Request, Response } from 'express'
+import { authService } from '@/services'
 
 const verifyJWT = async (request: Request, response: Response) => {
     try {

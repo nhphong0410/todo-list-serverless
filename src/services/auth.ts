@@ -1,5 +1,5 @@
-import appwriteAccount from "@/libs/appwrite/account"
-import appwriteClient from "@/libs/appwrite/client"
+import appwriteAccount from '@/libs/appwrite/account'
+import appwriteClient from '@/libs/appwrite/client'
 
 const verifyJWT = async (jwt: string) => {
     await appwriteClient.setJWT(jwt)

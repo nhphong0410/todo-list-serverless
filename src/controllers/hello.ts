@@ -1,5 +1,5 @@
-import { Request, Response } from "express"
-import { helloService } from "@/services"
+import { Request, Response } from 'express'
+import { helloService } from '@/services'
 
 const hello = async (request: Request, response: Response) => {
     try {
@@ -12,7 +12,7 @@ const hello = async (request: Request, response: Response) => {
         }
     } catch (error) {
         return response.status(500).json({
-            message: 'Server nổ rồi!!!'
+            message: 'BÙM!!!'
         })
     }
 }

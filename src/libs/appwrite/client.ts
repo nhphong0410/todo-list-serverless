@@ -1,4 +1,4 @@
-import { Client } from "node-appwrite"
+import { Client } from 'node-appwrite'
 
 const client = new Client()
 
