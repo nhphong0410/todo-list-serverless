@@ -5,6 +5,9 @@ useDotenv: true
 provider:
     name: aws
     runtime: nodejs18.x
+    stage: dev
+    region: us-east-1
+    deploymentMethod: direct
     
     environment:
         NODE_ENV: ${env:NODE_ENV}
